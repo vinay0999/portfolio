@@ -1,0 +1,194 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+/* Navigation Hover Effect */
+nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #ffcc00;
+    color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* Header Animation */
+header h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Section Fade-In Effect */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* JavaScript to Add Scroll Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Default Light Mode */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #111;
+}
+
+.dark-mode section {
+    background-color: #333;
+}
+
+.dark-mode button {
+    background-color: #ffcc00;
+    color: black;
+}
